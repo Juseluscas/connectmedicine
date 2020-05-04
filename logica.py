@@ -2,6 +2,7 @@
 from funcoes import *
 from webexteams import getwebexMsg, webexmsgRoomviaID
 import json
+from dna import *
 
 def logica(comando,usermail):
 
@@ -18,14 +19,15 @@ def logica(comando,usermail):
     comando = comando.lower()
     box=comando
 
-    while box == "oi" or box == "ola" or box == "hey" or box == "ei" or box == "alo":
+    while box == "oi" or box == "ola" or box == "hey" or box == "ei" or box == "alo" or box == "CONNECT MEDICINE oi" or box == "CONNECT MEDICINE ola" or box == "CONNECT MEDICINE hey":
         msg=""
         arquivo=""
         msg= "Olá eu sou o Connect Medicine e estou aqui pra ajudar:\n" 
         msg=msg+ "Qual das seguintes opções deseja ?\n"   
         msg=msg+ "(1) - Ativo mais próximo ?\n"  
         msg=msg+ "(2) - Ativos Disnponíveis ?\n"
-        msg=msg+ "(3) - Quem está utilizando um ativo?\n"
+        msg=msg+ "(3) - Quem está utilizando um ativo ?\n"
+        msg=msg+ "(4) - Qual a maca mais próxima ?"
         return msg,arquivo
     else:
         msg=""
@@ -33,7 +35,7 @@ def logica(comando,usermail):
         box2 = box
         #condicional para os serviços de ativos proximos
         if box2 == "1":
-            msg="o ativo mais próximo é o ativo 32545"
+            msg=("o ativo mais próximo é o ativo")
             return msg,arquivo
         elif box2 == "ativo":
             msg="o ativo mais próximo é o ativo 32545"
@@ -79,9 +81,12 @@ def logica(comando,usermail):
             msg= "Quem esta utilizando o ativo é Fernanda"
             return msg,arquivo
         #Possiveis erros de utilizando o ativo
-        elif box2 == "utilandi" or box2 == "utiliza":
-            msg: "As palavras que você digitou chegaram perto de 'utilizando', tente elas"
+        elif box2 == "utiland" or box2 == "utiliza":
+            msg= "As palavras que você digitou chegaram perto de 'utilizando', tente elas"
             return msg,arquivo
+        elif box2 == "4" or box2 == "maca" or box2 == "maca proxima":
+            msg= ("A cadeira de rodas mais próxima se encontra no ", localidade_cadeira3)
+            return msg, arquivo
 
         
             
@@ -95,7 +100,7 @@ def logica(comando,usermail):
     # comando na variavel box, lower deixa em minusculo para normalizar
     
     # Para o caso de nenhum pedido coberto aqui
-    mais="\nEscreva 'mais' para saber suas opções"
+    
     
     # 21.11.19
     # variavel arquivo para o caso do bot devolver arquivos anexados
@@ -109,39 +114,6 @@ def logica(comando,usermail):
     # Funcoes para todos
     
     # Uso da funcao "mais"
-
-    print(comando)
-    print(box)
-
-    if box == "oi":
-        
-        
-        if box == "1":
-            msg="dancing"
-
-    elif box == "ei":
-        msg= "Olá eu sou o Connect Medicine e estou aqui pra ajudar:\n" 
-        msg=msg+ "Qual das seguintes opções deseja ?\n"   
-        msg=msg+ "(1) - Ativo mais próximo ?\n"  
-        msg=msg+ "(2) - Disponibilidade ?\n"
-        msg=msg+ "(3) - Quem está utilizando um ativo?\n"
-
-    elif box == "ola":
-        msg= "Olá eu sou o Connect Medicine e estou aqui pra ajudar:\n" 
-        msg=msg+ "Qual das seguintes opções deseja ?\n"   
-        msg=msg+ "(1) - Ativo mais próximo ?\n"  
-        msg=msg+ "(2) - Disponibilidade ?\n"
-        msg=msg+ "(3) - Quem está utilizando um ativo?\n"
-
-    elif box == "alo":
-        msg= "Olá eu sou o Connect Medicine e estou aqui pra ajudar:\n" 
-        msg=msg+ "Qual das seguintes opções deseja ?\n"   
-        msg=msg+ "(1) - Ativo mais próximo ?\n"  
-        msg=msg+ "(2) - Disponibilidade ?\n"
-        msg=msg+ "(3) - Quem está utilizando um ativo?\n"
-
-    else:
-        msg="Não entendi o que você quis dizer, por favor tente dizer 'Oi' pra mim"
 
 
     #  if len(sp)>2:
@@ -159,7 +131,7 @@ def logica(comando,usermail):
     #     msg=APICall(site,token)
         
 
-    # return msg,arquivo
+    return msg,arquivo
 
 
 def trataPOST(content):
