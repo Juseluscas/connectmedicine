@@ -48,11 +48,9 @@ def logica(comando,usermail):
         msg=""
         arquivo=""
         box2 = box
-        #condicional para o°s serviços de ativos proximos
-        if box2 == "1" or box2 == "ativo próximo" or box2 == "próximo":
-            msg=("Em qual área do 12°Andar você está ? \n Escolha uma opção abaixo: ")
-            msg=msg+ "\n"
-            msg=msg+ "\n **1)** Corredor - - \n **2)**Retail - - \n **3)**e-Cafe - - \n **4)**Educação - -  \n **5)**Lobby - -\n **6)**Smartgrid - - \n **7)**Recepção - - \n **8)**PSS - - \n**9)**Healthcare"  
+        #condicional para os serviços de ativos proximos
+        if box2 == "1":
+            msg=("o ativo mais próximo é o ativo")
             return msg,arquivo
 
 
