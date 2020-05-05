@@ -52,9 +52,15 @@ def logica(comando,usermail):
         if box2 == "1" or box2 == "ativo próximo" or box2 == "próximo":
             msg=("Em qual área do 12°Andar você está ? \n Escolha uma opção abaixo: ")
             msg=msg+ "\n"
-            msg=msg+ "\n **1)**Corredor \n **2)**Retail \n **3)**e-Cafe \n **4)**Educação \n **5)**Lobby \n **6)**Smartgrid \n **7)**Recepção \n **8)**PSS \n **9)**Healthcare"  
-            msg=msg+ "\n"
-
+            msg=msg+ "\n**1)**Corredor\n  
+            msg=msg+ "\n**2)**Retail\n"
+            msg=msg+ "\n**3)**e-Cafe\n"
+            msg=msg+ "\n**4)**Educação\n"
+            msg=msg+ "\n**5)**Lobby \n"
+            msg=msg+ "\n**6)**Smartgrid\n"
+            msg=msg+ "\n**7)**Recepção \n"
+            msg=msg+ "\n**8)**PSS\n 
+            msg=msg+ "\n**9)**Healthcare\n" 
             return msg,arquivo
 
 
