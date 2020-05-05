@@ -22,13 +22,13 @@ def logica(comando,usermail):
     while box == "oi" or box == "ola" or box == "hey" or box == "ei" or box == "alo" or box == "connected medicine oi" or box == "connected medicine ola" or box == "connected medicine hey" or box == "olá" or box == "connected medicine olá":
         msg=""
         arquivo=""
-        msg= "Olá"
+        msg= "Olá\n"
         msg=msg+ "\n"
         msg=msg+ "Estou sempre a disposição para te ajudar!!\n"
         msg=msg+ "\n"
         msg=msg+ "Atualmente posso monitorar os ativos dessa unidade."
         msg=msg+ "\n"
-        msg=msg+ "Quando oportuno, poderei muito mais..."
+        msg=msg+ " Quando oportuno, poderei muito mais..."
         msg=msg+ "\n"
         msg=msg+ "\n Por favor, escolha as opções abaixo:"   
         msg=msg+ "\n"
@@ -36,13 +36,13 @@ def logica(comando,usermail):
         msg=msg+ "\n"
         msg=msg+ "\n **(2)** - Ativos **disponíveis** ?"
         msg=msg+ "\n"
-        msg=msg+ "\n **(3)** - Ventilador mais próximo ?"
+        msg=msg+ "\n **(3)** - **Ventilador** mais próximo ?"
         msg=msg+ "\n"
-        msg=msg+ "\n **(4)** - Cadeira de rodas mais próxima ?"
+        msg=msg+ "\n **(4)** - **Cadeira de rodas** mais próxima ?"
         msg=msg+ "\n"
-        msg=msg+ "\n **(5)** - Onde está o paciente ?"
+        msg=msg+ "\n **(5)** - Onde está o **paciente** ?"
         msg=msg+ "\n"
-        msg=msg+ "\n **help** - Digite help se precisar de ajuda "
+        msg=msg+ "\n **help** - Digite **help** se precisar de ajuda "
         return msg,arquivo
     else:
         msg=""
@@ -102,7 +102,7 @@ def logica(comando,usermail):
             msg=msg+ "\n"
             msg=msg+ "\n*Antes de entrar em contato com algum equipamento, lembre-se de utilizar uma mascára e mantenha-se higienizado*"
             msg=msg+ "\n"
-            msg=msg+ "\n Se deseja mais alguma informação, é só dizer 'olá', que irei te ajudar"
+            msg=msg+ "\n Se deseja mais alguma informação, é só dizer **'olá'**, que irei te ajudar"
             return msg,arquivo
         #Possiveis erros Ventilador
         elif box2 == "vnetilador" or box2 == "ventilado":
@@ -115,7 +115,7 @@ def logica(comando,usermail):
             msg=msg+ "\n"
             msg=msg+ "\n*Antes de entrar em contato com algum equipamento, lembre-se de utilizar uma mascára e mantenha-se higienizado*"
             msg=msg+ "\n"
-            msg=msg+ "\n Se deseja mais alguma informação, é só dizer 'olá', que irei te ajudar"
+            msg=msg+ "\n Se deseja mais alguma informação, é só dizer **'olá'**, que irei te ajudar"
             return msg, arquivo
         #Possíveis erros Cadeira
         elif box2 == "cadera" or box2 ==  "cadera roda" or box2 == "cadeira de roda" or box2 =="connected medicine cadera" or box2 == "connected medicine cadeira de roda":
@@ -127,7 +127,7 @@ def logica(comando,usermail):
             msg=msg+ "\n"
             msg=msg+ "\n*Antes de entrar em contato com algum paciente, lembre-se de utilizar uma mascára e mantenha-se higienizado*"
             msg=msg+ "\n"
-            msg=msg+ "\n Se deseja mais alguma informação, é só dizer 'olá', que irei te ajudar"
+            msg=msg+ "\n Se deseja mais alguma informação, é só dizer **'olá'**, que irei te ajudar"
             return msg, arquivo
 
         elif box2 == "pacient" or box2 == "pacineti":
