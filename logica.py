@@ -124,7 +124,7 @@ def logica(comando,usermail):
 
         elif box2 == "5" or box2 == "paciente" or box2 == "pacientes" or box2 == "connected medicine 5" or box2 == "connected medicine paciente" or box2 == "connected medicine pacientes":
             msg= "\n O paciente 1 se encontra no(a): {0}".format(localidade_paciente)
-            msg=msg+ "\n e o paciente 2 se encontra no(a): {0}".format(localidade_cliente)
+            #msg=msg+ "\n e o paciente 2 se encontra no(a): {0}".format(localidade_cliente)
             msg=msg+ "\n"
             msg=msg+ "\n*Antes de entrar em contato com algum paciente, lembre-se de utilizar uma mascára e mantenha-se higienizado*"
             msg=msg+ "\n"
@@ -133,9 +133,10 @@ def logica(comando,usermail):
 
         elif box2 == "pacient" or box2 == "pacineti":
             msg="\n A(s) palavra(s) que você utilizou chegaram perto da palavra chave **paciente**, tente ela"
-
+            return msg, arquivo
         elif box2 == "help":
             msg="\n "
+            return msg, arquivo
 
         
         
