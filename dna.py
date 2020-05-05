@@ -17,7 +17,6 @@ myMacAddresses3 = ('00:04:f1:06:d5:33')
 myMacAddresses4 = ('08:21:ef:d0:db:36')
 myMacAddresses5 = ('bc:3b:af:9c:9c:e1')
 
-imagem = cv2.imread("sonic.jpg", 1)
 #for tenant in tenants:
  #   if tenant["macAddress"] in myMacAddresses:
   #      print(json.dumps(tenant['coordinates'], indent=4, sort_keys=True))
