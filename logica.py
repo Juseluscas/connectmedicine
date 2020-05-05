@@ -3,6 +3,7 @@ from funcoes import *
 from webexteams import getwebexMsg, webexmsgRoomviaID
 import json
 from dna import *
+import cv2
 
 def logica(comando,usermail):
 
@@ -22,12 +23,14 @@ def logica(comando,usermail):
     while box == "oi" or box == "ola" or box == "hey" or box == "ei" or box == "alo" or box == "connected oi" or box == "connected ola" or box == "connected hey":
         msg=""
         arquivo=""
+        img = (cv2.imshow("imagem", imagem))
         msg= "Olá eu sou o Connect Medicine e estou aqui pra ajudar:\n" 
         msg=msg+ "Qual das seguintes opções deseja ?\n"   
         msg=msg+ "(1) - Ativo mais próximo ?\n"  
         msg=msg+ "(2) - Ativos Disnponíveis ?\n"
         msg=msg+ "(3) - Quem está utilizando um ativo ?\n"
         msg=msg+ "(4) - Qual a maca mais próxima ?"
+        msg=msg+ "img, {}".format(img)
         return msg,arquivo
     else:
         msg=""
