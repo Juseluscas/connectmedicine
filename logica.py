@@ -19,7 +19,7 @@ def logica(comando,usermail):
     comando = comando.lower()
     box=comando
 
-    while box == "oi" or box == "ola" or box == "hey" or box == "ei" or box == "alo" or box == "CONNECTED MEDICINE oi" or box == "CONNECTED MEDICINE ola" or box == "CONNECT MEDICINE hey":
+    while box == "oi" or box == "ola" or box == "hey" or box == "ei" or box == "alo" or box == "bot oi" or box == "CONNECTED MEDICINE ola" or box == "CONNECT MEDICINE hey":
         msg=""
         arquivo=""
         msg= "Olá eu sou o Connect Medicine e estou aqui pra ajudar:\n" 
