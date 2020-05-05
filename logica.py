@@ -50,7 +50,7 @@ def logica(comando,usermail):
         box2 = box
         #condicional para o°s serviços de ativos proximos
         if box2 == "1" or box2 == "ativo próximo" or box2 == "próximo":
-            msg=("Em qual área do 12°Andar você está ? \n Escolha uma opção abaixo: ")
+            msg= "Em qual área do 12°Andar você está ? \n Escolha uma opção abaixo: "
             msg=msg+ "\n"
             msg=msg+ "\n**1)**Corredor\n"
             msg=msg+ "\n**2)**Retail\n"
