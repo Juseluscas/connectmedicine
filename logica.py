@@ -98,7 +98,7 @@ def logica(comando,usermail):
 
         #Ventilador
         elif box2 == "3" or box2 == "ventilador" or box2 == "ventilador próximo" or box2 == "connected medicine 3" or box2 == "connected medicine ventilador":
-            msg= "\n O ventilador pulmonar mais próximo se encontra ={0}".format(localidade_ventilador)
+            msg= "\n O ventilador pulmonar mais próximo se encontra no(a){0}".format(localidade_ventilador)
             msg=msg+ "\n"
             msg=msg+ "\n*Antes de entrar em contato com algum equipamento, lembre-se de utilizar uma mascára e mantenha-se higienizado*"
             msg=msg+ "\n"
@@ -111,19 +111,20 @@ def logica(comando,usermail):
 
         #Cadeira
         elif box2 == "4" or box2 == "cadeira" or box2 == "cadeira próxima" or box2 == "cadeira de rodas" or box2 == "connected medicine 4" or box2 == "connected medicine cadeira":
-            msg= "\n A cadeira de rodas mais próxima se encontra no {0}".format(localidade_cadeira)
+            msg= "\n A cadeira de rodas mais próxima se encontra no(a) {0}".format(localidade_cadeira)
             msg=msg+ "\n"
             msg=msg+ "\n*Antes de entrar em contato com algum equipamento, lembre-se de utilizar uma mascára e mantenha-se higienizado*"
             msg=msg+ "\n"
             msg=msg+ "\n Se deseja mais alguma informação, é só dizer **'olá'**, que irei te ajudar"
             return msg, arquivo
         #Possíveis erros Cadeira
-        elif box2 == "cadera" or box2 ==  "cadera roda" or box2 == "cadeira de roda" or box2 =="connected medicine cadera" or box2 == "connected medicine cadeira de roda":
+        elif box2 == "cadera" or box2 ==  "cadera roda" or box2 == "cadeira de roda" or box2 =="connected medicine cadera" or box2 == "connected medicine cadeira de roda" or "box2 == connected medicine 4":
             msg= "\n A(s) palavra(s) que você utilizou chegaram perto da palavra chave **cadeira** e/ou **cadeira de rodas**, tente elas"
             return msg, arquivo
 
         elif box2 == "5" or box2 == "paciente" or box2 == "pacientes" or box2 == "connected medicine 5" or box2 == "connected medicine paciente" or box2 == "connected medicine pacientes":
-            msg= "\n O(s) Paciente(s) se encontram no {0} {1}".format(localidade_paciente, localidade_sonim)
+            msg= "\n O paciente 1 se encontra no(a): {0}".format(localidade_paciente)
+            msg=msg+ "\n e o paciente 2 se encontra no(a): {0}".format(localidade_cliente)
             msg=msg+ "\n"
             msg=msg+ "\n*Antes de entrar em contato com algum paciente, lembre-se de utilizar uma mascára e mantenha-se higienizado*"
             msg=msg+ "\n"
