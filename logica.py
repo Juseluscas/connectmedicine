@@ -65,13 +65,6 @@ def logica(comando,usermail):
         elif box2 == "ativa":
             msg="As palavras que você digitou chegaram perto de 'ativo proximo' e 'proximo', tente elas"
             return msg,arquivo
-        elif box2 == "procimo":
-            msg="As palavras que você digitou chegaram perto de 'ativo proximo' e 'proximo', tente elas"
-            return msg,arquivo
-        elif box2 == "acivo":
-            msg="As palavras que você digitou chegaram perto de 'ativo proximo' e 'proximo', tente elas"
-            return msg,arquivo
-
 
 
         #ativos disponíveis
@@ -118,13 +111,13 @@ def logica(comando,usermail):
             msg=msg+ "\n Se deseja mais alguma informação, é só dizer **'olá'**, que irei te ajudar"
             return msg, arquivo
         #Possíveis erros Cadeira
-        elif box2 == "cadera" or box2 ==  "cadera roda" or box2 == "cadeira de roda" or box2 =="connected medicine cadera" or box2 == "connected medicine cadeira de roda" or "box2 == connected medicine 4":
+        elif box2 == "cadera" or box2 ==  "cadera roda" or box2 == "cadeira de roda" or box2 =="connected medicine cadera" or box2 == "connected medicine cadeira de roda" or box2 == "connected medicine 4":
             msg= "\n A(s) palavra(s) que você utilizou chegaram perto da palavra chave **cadeira** e/ou **cadeira de rodas**, tente elas"
             return msg, arquivo
 
         elif box2 == "5" or box2 == "paciente" or box2 == "pacientes" or box2 == "connected medicine 5" or box2 == "connected medicine paciente" or box2 == "connected medicine pacientes":
             msg= "\n O paciente 1 se encontra no(a): {0}".format(localidade_paciente)
-            #msg=msg+ "\n e o paciente 2 se encontra no(a): {0}".format(localidade_cliente)
+            msg=msg+ "\n e o paciente 2 se encontra no(a): {0}".format(localidade_cliente)
             msg=msg+ "\n"
             msg=msg+ "\n*Antes de entrar em contato com algum paciente, lembre-se de utilizar uma mascára e mantenha-se higienizado*"
             msg=msg+ "\n"
@@ -136,7 +129,7 @@ def logica(comando,usermail):
             return msg, arquivo
         elif box2 == "help":
             msg="\n "
-            return msg, arquivo
+            return msg, arquivo 
 
         
         
