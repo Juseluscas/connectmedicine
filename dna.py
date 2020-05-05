@@ -165,88 +165,88 @@ for tenant in dna_data:
 #localidade_samsung
 
     if tenant["macAddress"] in myMacAddresses4:
-        localidade_samsung = (json.dumps(tenant["hierarchy"], indent=4, sort_keys=True))
+        localidade_paciente = (json.dumps(tenant["hierarchy"], indent=4, sort_keys=True))
   #      print(localidade_samsung)
         if tenant["hierarchy"] == "ICRIO>RDJ3>12 floor>Corridor":
-            localidade_samsung = ('Corredor')
-     #       print (localidade_samsung)
+            localidade_paciente = ('Corredor')
+     #       print (localidade_paciente)
 
         elif tenant["hierarchy"] == "ICRIO>RDJ3>12 floor>Retail":
-            localidade_samsung = ('Retail')
-     #       print (localidade_samsung)
+            localidade_paciente = ('Retail')
+     #       print (localidade_paciente)
 
         elif tenant["hierarchy"] == "ICRIO>RDJ3>12 floor>e-Cafe":
-            localidade_samsung = ('e-Cafe')
-      ##      print (localidade_samsung)
+            localidade_paciente = ('e-Cafe')
+      ##      print (localidade_paciente)
             
         elif tenant["hierarchy"] == "ICRIO>RDJ3>12 floor>Education":
-            localidade_samsung = ('Educação')
-    #        print (localidade_samsung)
+            localidade_paciente = ('Educação')
+    #        print (localidade_paciente)
 
         elif tenant["hierarchy"] == "ICRIO>RDJ3>12 floor>Lobby":
-            localidade_samsung = ('Lobby')
-     #       print (localidade_samsung)
+            localidade_paciente = ('Lobby')
+     #       print (localidade_paciente)
 
         elif tenant["hierarchy"] == "ICRIO>RDJ3>12 floor>Smartgrid":
-            localidade_samsung = ('Smartgrid')
-     #       print (localidade_samsung)
+            localidade_paciente = ('Smartgrid')
+     #       print (localidade_paciente)
 
         elif tenant["hierarchy"] == "ICRIO>RDJ3>12 floor>Reception":
-            localidade_samsung = ('Recepção')
-   #         print (localidade_samsung)
+            localidade_paciente = ('Recepção')
+   #         print (localidade_paciente)
 
         elif tenant["hierarchy"] == "ICRIO>RDJ3>12 floor>PSS":
-            localidade_samsung = ('PSS')
-    #        print (localidade_samsung)
+            localidade_paciente = ('PSS')
+    #        print (localidade_paciente)
 
         elif tenant["hierarchy"] == "ICRIO>RDJ3>12 floor":
-            localidade_samsung = ('Infelizmente não identificamos em qual área do 12ºAndar se encontra o cliente')
-    #        print (localidade_samsung)
+            localidade_paciente = ('Infelizmente não identificamos em qual área do 12ºAndar se encontra o cliente')
+    #        print (localidade_paciente)
 
         elif tenant["hierarchy"] == "ICRIO>RDJ3>12 floor>Healthcare":
-            localidade_samsung = ('Healthcare')
-    #        print (localidade_samsung)
+            localidade_paciente = ('Healthcare')
+    #        print (localidade_paciente)
 
 #localidade apple
 
     if tenant["macAddress"] in myMacAddresses5:
    #     print (tenant['hierarchy'])
         if tenant["hierarchy"] == "ICRIO>RDJ3>12 floor>Corridor":
-            localidade_apple = ('Corredor')
-   #         print (localidade_apple)
+            localidade_cliente = ('Corredor')
+   #         print (localidade_cliente)
 
         elif tenant["hierarchy"] == "ICRIO>RDJ3>12 floor>Retail":
-            localidade_apple = ('Retail')
-    #        print (localidade_apple)
+            localidade_cliente = ('Retail')
+    #        print (localidade_cliente)
 
         elif tenant["hierarchy"] == "ICRIO>RDJ3>12 floor>e-Cafe":
-            localidade_apple = ('e-Cafe')
-   #         print (localidade_apple)
+            localidade_cliente = ('e-Cafe')
+   #         print (localidade_cliente)
             
         elif tenant["hierarchy"] == "ICRIO>RDJ3>12 floor>Education":
-            localidade_apple = ('Educação')
-   #         print (localidade_apple)
+            localidade_cliente = ('Educação')
+   #         print (localidade_cliente)
 
         elif tenant["hierarchy"] == "ICRIO>RDJ3>12 floor>Lobby":
-            localidade_apple = ('Lobby')
-    #        print (localidade_apple)
+            localidade_cliente = ('Lobby')
+    #        print (localidade_cliente)
 
         elif tenant["hierarchy"] == "ICRIO>RDJ3>12 floor>Smartgrid":
-            localidade_apple = ('Smartgrid')
-    #        print (localidade_apple)
+            localidade_cliente = ('Smartgrid')
+    #        print (localidade_cliente)
 
         elif tenant["hierarchy"] == "ICRIO>RDJ3>12 floor>Reception":
-            localidade_apple = ('Recepção')
-   #         print (localidade_apple)
+            localidade_cliente = ('Recepção')
+   #         print (localidade_cliente)
 
         elif tenant["hierarchy"] == "ICRIO>RDJ3>12 floor>PSS":
-            localidade_apple = ('PSS')
-   #         print (localidade_apple)
+            localidade_cliente = ('PSS')
+   #         print (localidade_cliente)
             
         elif tenant["hierarchy"] == "ICRIO>RDJ3>12 floor":
-            localidade_apple = ('Infelizmente não identificamos em qual área do 12ºAndar se encontra o cliente')
-     #       print (localidade_apple)
+            localidade_cliente = ('Infelizmente não identificamos em qual área do 12ºAndar se encontra o cliente')
+     #       print (localidade_cliente)
 
         elif tenant["hierarchy"] == "ICRIO>RDJ3>12 floor>Healthcare":
-            localidade_apple = ('Healthcare')
-     #       print (localidade_apple)
+            localidade_cliente = ('Healthcare')
+     #       print (localidade_cliente)
