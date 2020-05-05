@@ -48,45 +48,29 @@ def logica(comando,usermail):
         msg=""
         arquivo=""
         box2 = box
-        #condicional para os serviços de ativos proximos
-        if box2 == "1":
-            msg=("o ativo mais próximo é o ativo")
-            return msg,arquivo
-        elif box2 == "ativo":
-            msg="o ativo mais próximo é o ativo 32545"
-            return msg,arquivo
-        elif box2 == "proximo":
-            msg="o ativo mais próximo é o ativo 32545"
-            return msg,arquivo
-        elif box2 == "ativo proximo":
-            msg="o ativo mais próximo é o ativo 32545"
-            return msg,arquivo
-        #ajudinha antecedendo possíveis erros de digitação de ativos proximos 
-        elif box2 == "ativa":
-            msg="As palavras que você digitou chegaram perto de 'ativo proximo' e 'proximo', tente elas"
+        #condicional para o°s serviços de ativos proximos
+        if box2 == "1" or box2 == "ativo próximo" or box2 == "próximo":
+            msg=("Em qual área do 12°Andar você está ? \n Escolha uma opção abaixo: ")
+            msg=msg+ "\n"
+            msg=msg+ "\n **1)**Corredor \n **2)**Retail \n **3)**e-Cafe \n **4)**Educação \n **5)**Lobby \n **6)**Smartgrid \n **7)**Recepção \n **8)**PSS \n **9)**Healthcare"  
+            msg=msg+ "\n"
+
             return msg,arquivo
 
 
         #ativos disponíveis
-        elif box2 == "2":
-            msg="Os ativos disponíveis são a maca de serial: 12345 e a cadeira de rodas de serial: 12331"
+        elif box2 == "2" or box2 == "ativos disponíveis" or box2 == "disponível" or box2 == "connected medicine 2" or box2 == "disponíveis" or box2 == "connected medicine ativos disponíveis" or box2 == "disponível":
+            msg= "Os ativos disponíveis são: \n"
+            msg=msg+ "\n"
+            msg=msg+ "\n O ventilador que está no(a) {}".format(localidade_ventilador)
+            msg=msg+ "\n"
+            msg=msg+ "\n A cadeira de rodas que está no(a) {}".format(localidade_cadeira)
+            msg=msg+ "\n"
+            msg=msg+ "\n O paciente 1 que está no(a) {}".format(localidade_paciente)
+            msg=msg+ "\n"
+            msg=msg+ "\n O paciente 2 que está no(a) {}".format(localidade_cliente)
             return msg,arquivo
-        elif box2 == "disponivel":
-            msg="Os ativos disponíveis são a maca de serial: 12345 e a cadeira de rodas de serial: 12331"
-            return msg,arquivo
-        elif box2 == "disponibilidade":
-            msg="Os ativos disponíveis são a maca de serial: 12345 e a cadeira de rodas de serial: 12331"
-            return msg,arquivo
-        elif box2 == "ativo disponível":
-            msg="Os ativos disponíveis são a maca de serial: 12345 e a cadeira de rodas de serial: 12331"
-            return msg,arquivo
-        #possíveis erros de digitação em ativos disponíveis
-        elif box2 == "disponibel":
-            msg="\n As palavras que você digitou chegaram perto de 'disponivel' , 'disponibilidade', tente elas"
-            return msg,arquivo        
-        elif box2 == "disponibilidads":
-            msg="\n As palavras que você digitou chegaram perto de 'disponivel' , 'disponibilidade', tente elas"
-            return msg,arquivo
+    
 
 
         #Ventilador
@@ -117,7 +101,8 @@ def logica(comando,usermail):
 
         elif box2 == "5" or box2 == "paciente" or box2 == "pacientes" or box2 == "connected medicine 5" or box2 == "connected medicine paciente" or box2 == "connected medicine pacientes":
             msg= "\n O paciente 1 se encontra no(a): {0}".format(localidade_paciente)
-            msg=msg+ "\n e o paciente 2 se encontra no(a): {0}".format(localidade_cliente)
+            msg=msg+ "\n"
+            msg=msg+ "\n O paciente 2 se encontra no(a): {0}".format(localidade_cliente)
             msg=msg+ "\n"
             msg=msg+ "\n*Antes de entrar em contato com algum paciente, lembre-se de utilizar uma mascára e mantenha-se higienizado*"
             msg=msg+ "\n"
