@@ -15,7 +15,6 @@ myMacAddresses2 = ('00:18:60:8a:f0:c0')
 myMacAddresses3 = ('00:04:f1:06:d5:33')
 myMacAddresses4 = ('08:21:ef:d0:db:36')
 myMacAddresses5 = ('bc:3b:af:9c:9c:e1')
-
 #for tenant in tenants:
  #   if tenant["macAddress"] in myMacAddresses:
   #      print(json.dumps(tenant['coordinates'], indent=4, sort_keys=True))

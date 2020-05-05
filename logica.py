@@ -3,7 +3,6 @@ from funcoes import *
 from webexteams import getwebexMsg, webexmsgRoomviaID
 import json
 from dna import *
-import cv2
 
 def logica(comando,usermail):
 
@@ -86,7 +85,7 @@ def logica(comando,usermail):
             msg= "As palavras que você digitou chegaram perto de 'utilizando', tente elas"
             return msg,arquivo
         elif box2 == "4" or box2 == "maca" or box2 == "maca proxima" or box2 == "connected 4" or box2 == "connected maca":
-            msg= "A cadeira de rodas mais próxima se encontra no {0}".format(localidade_cadeira)
+            msg= "A cadeira de rodas mais próxima se encontra no {0}".format(localidade_cadeira3)
             return msg, arquivo
 
         
