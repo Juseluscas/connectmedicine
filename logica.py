@@ -19,7 +19,7 @@ def logica(comando,usermail):
     comando = comando.lower()
     box=comando
 
-    while box == "oi" or box == "ola" or box == "hey" or box == "ei" or box == "alo" or box == "connected oi" or box == "connected ola" or box == "connected hey":
+    while box == "oi" or box == "ola" or box == "hey" or box == "ei" or box == "alo" or box == "connected medicine oi" or box == "connected medicine ola" or box == "connected medicine hey":
         msg=""
         arquivo=""
         msg= "Olá eu sou o **Connect Medicine** e estou aqui pra ajudar:\n" 
@@ -89,7 +89,7 @@ def logica(comando,usermail):
         elif box2 == "utiland" or box2 == "utiliza":
             msg= "As palavras que você digitou chegaram perto de 'utilizando', tente elas"
             return msg,arquivo
-        elif box2 == "4" or box2 == "maca" or box2 == "maca proxima" or box2 == "connected 4" or box2 == "connected maca":
+        elif box2 == "4" or box2 == "maca" or box2 == "maca proxima" or box2 == "connected medicine 4" or box2 == "connected medicine maca":
             msg= "A cadeira de rodas mais próxima se encontra no {0}".format(localidade_cadeira)
             return msg, arquivo
 
