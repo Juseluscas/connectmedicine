@@ -22,11 +22,16 @@ def logica(comando,usermail):
     while box == "oi" or box == "ola" or box == "hey" or box == "ei" or box == "alo" or box == "connected oi" or box == "connected ola" or box == "connected hey":
         msg=""
         arquivo=""
-        msg= "Olá eu sou o Connect Medicine e estou aqui pra ajudar:\n" 
+        msg= "Olá eu sou o **Connect Medicine** e estou aqui pra ajudar:\n" 
+        msg=msg+ " "
         msg=msg+ "Qual das seguintes opções deseja ?\n"   
-        msg=msg+ "(1) - Ativo mais próximo ?\n"  
+        msg=msg+ " "
+        msg=msg+ "(1) - Ativo mais próximo ?\n"
+        msg=msg+ " "
         msg=msg+ "(2) - Ativos Disnponíveis ?\n"
+        msg=msg+ " "
         msg=msg+ "(3) - Quem está utilizando um ativo ?\n"
+        msg=msg+ " "
         msg=msg+ "(4) - Qual a maca mais próxima ?"
         return msg,arquivo
     else:
