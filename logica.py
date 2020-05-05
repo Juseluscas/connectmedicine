@@ -84,7 +84,7 @@ def logica(comando,usermail):
         elif box2 == "utiland" or box2 == "utiliza":
             msg= "As palavras que você digitou chegaram perto de 'utilizando', tente elas"
             return msg,arquivo
-        elif box2 == "4" or box2 == "maca" or box2 == "maca proxima":
+        elif box2 == "4" or box2 == "maca" or box2 == "maca proxima" or box2 == "connected 4" or box2 == "connected maca":
             msg= "A cadeira de rodas mais próxima se encontra no {0}".format(localidade_cadeira3)
             return msg, arquivo
 
