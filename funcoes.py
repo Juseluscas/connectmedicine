@@ -1,6 +1,5 @@
 ﻿import requests
 import json 
-import cv2
 
 # Funcoes de texto - informacionais
 

@@ -23,14 +23,12 @@ def logica(comando,usermail):
     while box == "oi" or box == "ola" or box == "hey" or box == "ei" or box == "alo" or box == "connected oi" or box == "connected ola" or box == "connected hey":
         msg=""
         arquivo=""
-        img = (cv2.imshow("imagem", imagem))
         msg= "Olá eu sou o Connect Medicine e estou aqui pra ajudar:\n" 
         msg=msg+ "Qual das seguintes opções deseja ?\n"   
         msg=msg+ "(1) - Ativo mais próximo ?\n"  
         msg=msg+ "(2) - Ativos Disnponíveis ?\n"
         msg=msg+ "(3) - Quem está utilizando um ativo ?\n"
         msg=msg+ "(4) - Qual a maca mais próxima ?"
-        msg=msg+ "img, {}".format(img)
         return msg,arquivo
     else:
         msg=""
@@ -88,7 +86,7 @@ def logica(comando,usermail):
             msg= "As palavras que você digitou chegaram perto de 'utilizando', tente elas"
             return msg,arquivo
         elif box2 == "4" or box2 == "maca" or box2 == "maca proxima" or box2 == "connected 4" or box2 == "connected maca":
-            msg= "A cadeira de rodas mais próxima se encontra no {0}".format(localidade_cadeira3)
+            msg= "A cadeira de rodas mais próxima se encontra no {0}".format(localidade_cadeira)
             return msg, arquivo
 
         
