@@ -19,14 +19,14 @@ def logica(comando,usermail):
     comando = comando.lower()
     box=comando
 
-    while box == "oi" or box == "ola" or box == "hey" or box == "ei" or box == "alo" or box == "connected medicine oi" or box == "connected medicine ola" or box == "connected medicine hey" or box == "olá" or box == "connected medicine olá":
+    while box == "oi" or box == "ola" or box == "hey" or box == "ei" or box == "alo" or box == "connected medicine oi" or box == "connected medicine ola" or box == "connected medicine hey" or box == "olá" or box == "connected medicine olá" or box2 == "connected oi" or box2 == "connected olá" or box2 == "connected ola" or box2 == "connected hey":
         msg=""
         arquivo=""
         msg= "Olá\n"
         msg=msg+ "\n"
         msg=msg+ "Estou sempre a disposição para te ajudar!!\n"
         msg=msg+ "\n"
-        msg=msg+ "Atualmente posso monitorar os ativos dessa unidade."
+        msg=msg+ "Atualmente posso monitorar os ativos dessa unidade. "
         msg=msg+ "\n"
         msg=msg+ " Quando oportuno, poderei muito mais..."
         msg=msg+ "\n"
@@ -49,7 +49,7 @@ def logica(comando,usermail):
         arquivo=""
         box2 = box
         #condicional para os serviços de ativos proximos
-        if box2 == "1":
+        if box2 == "1" or box2 == "próximo" or box2 == "connected 1" or box2 == "connected próximo" or box2 == "connected medicine 1" or box2 == "connected medicine próximo":
             msg= "Em qual lugar do 12°Andar você está ?\n"
             msg=msg+ "\n"
             msg=msg+ "\n **a)**Corredor         **b)**Retail"
@@ -93,7 +93,7 @@ def logica(comando,usermail):
 
         #Ventilador
         elif box2 == "3" or box2 == "ventilador" or box2 == "ventilador próximo" or box2 == "connected medicine 3" or box2 == "connected medicine ventilador" or box2 == "connected 3" or box2 == "connected ventilador":
-            msg= "\n O ventilador pulmonar mais próximo se encontra no(a){0}".format(localidade_ventilador)
+            msg= "\n O ventilador pulmonar mais próximo se encontra no(a) {0}".format(localidade_ventilador)
             msg=msg+ "\n"
             msg=msg+ "\n*Antes de entrar em contato com algum equipamento, lembre-se de utilizar uma mascára e mantenha-se higienizado*"
             msg=msg+ "\n"

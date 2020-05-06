@@ -209,7 +209,7 @@ for tenant in dna_data:
     #        print (localidade_paciente)
 
         elif tenant["hierarchy"] == "ICRIO>RDJ3>12 floor":
-            localidade_paciente = ('Infelizmente não identificamos em qual área do 12ºAndar se encontra o cliente')
+            localidade_paciente = ('Infelizmente não identificamos em qual área do 12ºAndar se encontra o paciente')
     #        print (localidade_paciente)
 
         elif tenant["hierarchy"] == "ICRIO>RDJ3>12 floor>Healthcare":
