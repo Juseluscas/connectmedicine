@@ -50,12 +50,22 @@ def logica(comando,usermail):
         box2 = box
         #condicional para os serviços de ativos proximos
         if box2 == "1":
-            msg=("o ativo mais próximo é o ativo")
+            msg= "Em qual lugar do 12°Andar você está ?\n"
+            msg=msg+ "\n"
+            msg=msg+ "\n **1)**Corredor         **2)**Retail"
+            msg=msg+ "\n"
+            msg=msg+ "\n **3)**e-Cafe         **4)**Educação"
+            msg=msg+ "\n"
+            msg=msg+ "\n **5)**Lobby         **6)**Smartgrid"
+            msg=msg+ "\n"
+            msg=msg+ "\n **7)**Recepção         **8)**PSS       **9)**Healthcare"
+            msg=msg+ "\n"
+            msg=msg+ "\n *Use os números para se referênciar*"
             return msg,arquivo
 
 
         #ativos disponíveis
-        elif box2 == "2" or box2 == "ativos disponíveis" or box2 == "disponível" or box2 == "connected medicine 2" or box2 == "disponíveis" or box2 == "connected medicine ativos disponíveis" or box2 == "disponível":
+        elif box2 == "2" or box2 == "ativos disponíveis" or box2 == "disponível" or box2 == "connected medicine 2" or box2 == "disponíveis" or box2 == "connected medicine ativos disponíveis" or box2 == "disponível" or box2 == "connected disponível" or box2 == "connected 2":
             msg= "Os ativos disponíveis são: \n"
             msg=msg+ "\n"
             msg=msg+ "\n O ventilador que está no(a) {}".format(localidade_ventilador)
@@ -70,7 +80,7 @@ def logica(comando,usermail):
 
 
         #Ventilador
-        elif box2 == "3" or box2 == "ventilador" or box2 == "ventilador próximo" or box2 == "connected medicine 3" or box2 == "connected medicine ventilador":
+        elif box2 == "3" or box2 == "ventilador" or box2 == "ventilador próximo" or box2 == "connected medicine 3" or box2 == "connected medicine ventilador" or box2 == "connected 3" or box2 == "connected ventilador":
             msg= "\n O ventilador pulmonar mais próximo se encontra no(a){0}".format(localidade_ventilador)
             msg=msg+ "\n"
             msg=msg+ "\n*Antes de entrar em contato com algum equipamento, lembre-se de utilizar uma mascára e mantenha-se higienizado*"
@@ -83,7 +93,7 @@ def logica(comando,usermail):
             return msg,arquivo
 
         #Cadeira
-        elif box2 == "4" or box2 == "cadeira" or box2 == "cadeira próxima" or box2 == "cadeira de rodas" or box2 == "connected medicine 4" or box2 == "connected medicine cadeira":
+        elif box2 == "4" or box2 == "cadeira" or box2 == "cadeira próxima" or box2 == "cadeira de rodas" or box2 == "connected medicine 4" or box2 == "connected medicine cadeira" or box2 == "connected cadeira" or box2 == "connected 4" or "connected cadeira":
             msg= "\n A cadeira de rodas mais próxima se encontra no(a) {0}".format(localidade_cadeira)
             msg=msg+ "\n"
             msg=msg+ "\n*Antes de entrar em contato com algum equipamento, lembre-se de utilizar uma mascára e mantenha-se higienizado*"
@@ -95,7 +105,7 @@ def logica(comando,usermail):
             msg= "\n A(s) palavra(s) que você utilizou chegaram perto da palavra chave **cadeira** e/ou **cadeira de rodas**, tente elas"
             return msg, arquivo
 
-        elif box2 == "5" or box2 == "paciente" or box2 == "pacientes" or box2 == "connected medicine 5" or box2 == "connected medicine paciente" or box2 == "connected medicine pacientes":
+        elif box2 == "5" or box2 == "paciente" or box2 == "pacientes" or box2 == "connected medicine 5" or box2 == "connected medicine paciente" or box2 == "connected medicine pacientes" or box2 == "connected paciente" or box2 == "connected 5":
             msg= "\n O paciente 1 se encontra no(a): {0}".format(localidade_paciente)
             msg=msg+ "\n"
             msg=msg+ "\n O paciente 2 se encontra no(a): {0}".format(localidade_cliente)
@@ -108,7 +118,7 @@ def logica(comando,usermail):
         elif box2 == "pacient" or box2 == "pacineti":
             msg="\n A(s) palavra(s) que você utilizou chegaram perto da palavra chave **paciente**, tente ela"
             return msg, arquivo
-        elif box2 == "help":
+        elif box2 == "help" or box2 == "connected medicine help" or box2 == "connected help":
             msg="\n "
             return msg, arquivo 
 
