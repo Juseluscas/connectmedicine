@@ -52,16 +52,25 @@ def logica(comando,usermail):
         if box2 == "1":
             msg= "Em qual lugar do 12°Andar você está ?\n"
             msg=msg+ "\n"
-            msg=msg+ "\n **1)**Corredor         **2)**Retail"
+            msg=msg+ "\n **a)**Corredor         **b)**Retail"
             msg=msg+ "\n"
-            msg=msg+ "\n **3)**e-Cafe         **4)**Educação"
+            msg=msg+ "\n **c)**e-Cafe           **d)**Educação"
             msg=msg+ "\n"
-            msg=msg+ "\n **5)**Lobby         **6)**Smartgrid"
+            msg=msg+ "\n **e)**Lobby            **f)**Smartgrid"
             msg=msg+ "\n"
-            msg=msg+ "\n **7)**Recepção         **8)**PSS       **9)**Healthcare"
+            msg=msg+ "\n **g)**Recepção         **h)**PSS         **i)**Healthcare"
             msg=msg+ "\n"
-            msg=msg+ "\n *Use os números para se referênciar*"
+            msg=msg+ "\n *Use as letras para se referênciar*"
+            box3 = box2               
             return msg,arquivo
+
+        elif box3 == "d":
+            if cadeira == ('cadeira', 'Retail'):
+                msg == "O dispositivo mais próximo é a cadeira de rodas que se encontra no Retail"
+                msg=msg+ "\n"
+                msg=msg+ "\n*Antes de entrar em contato com algum equipamento ou paciente, lembre-se de utilizar uma mascára e mantenha-se higienizado*"
+                msg=msg+ "\n"
+                msg=msg+ "\n Se deseja mais alguma informação, é só dizer **'olá'**, que irei te ajudar"
 
 
         #ativos disponíveis
@@ -75,6 +84,10 @@ def logica(comando,usermail):
             msg=msg+ "\n O paciente 1 que está no(a) {}".format(localidade_paciente)
             msg=msg+ "\n"
             msg=msg+ "\n O paciente 2 que está no(a) {}".format(localidade_cliente)
+            msg=msg+ "\n"
+            msg=msg+ "\n*Antes de entrar em contato com algum equipamento ou paciente, lembre-se de utilizar uma mascára e mantenha-se higienizado*"
+            msg=msg+ "\n"
+            msg=msg+ "\n Se deseja mais alguma informação, é só dizer **'olá'**, que irei te ajudar"
             return msg,arquivo
     
 
@@ -121,6 +134,9 @@ def logica(comando,usermail):
         elif box2 == "help" or box2 == "connected medicine help" or box2 == "connected help":
             msg="\n "
             return msg, arquivo 
+
+        else:
+            msg= "Eu não compreendi o que você necessita, mas posso te ajudar, tenta dar um **olá** para mim"
 
         
         

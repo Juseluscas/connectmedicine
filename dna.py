@@ -123,34 +123,42 @@ for tenant in dna_data:
    #     print(localidade_cadeira)
         if tenant["hierarchy"] == "ICRIO>RDJ3>12 floor>Corridor":
             localidade_cadeira = ('Corredor')
+            cadeira = ("cadeira",localidade_cadeira)
      #       print (localidade_cadeira)
 
         elif tenant["hierarchy"] == "ICRIO>RDJ3>12 floor>Retail":
             localidade_cadeira = ('Retail')
+            cadeira = ("cadeira",localidade_cadeira)
        #     print (localidade_cadeira)
 
         elif tenant["hierarchy"] == "ICRIO>RDJ3>12 floor>e-Cafe":
             localidade_cadeira = ('e-Cafe')
+            cadeira = ("cadeira",localidade_cadeira)
       #      print (localidade_cadeira)
             
         elif tenant["hierarchy"] == "ICRIO>RDJ3>12 floor>Education":
             localidade_cadeira = ('Educação')
+            cadeira = ("cadeira",localidade_cadeira)
       #      print (localidade_cadeira)
 
         elif tenant["hierarchy"] == "ICRIO>RDJ3>12 floor>Lobby":
             localidade_cadeira = ('Lobby')
+            cadeira = ("cadeira",localidade_cadeira)
       #      print (localidade_cadeira)
 
         elif tenant["hierarchy"] == "ICRIO>RDJ3>12 floor>Smartgrid":
             localidade_cadeira = ('Smartgrid')
+            cadeira = ("cadeira",localidade_cadeira)
        #     print (localidade_cadeira)
 
         elif tenant["hierarchy"] == "ICRIO>RDJ3>12 floor>Reception":
             localidade_cadeira = ('Recepção')
+            cadeira = ("cadeira",localidade_cadeira)
      #       print (localidade_cadeira)
 
         elif tenant["hierarchy"] == "ICRIO>RDJ3>12 floor>PSS":
             localidade_cadeira = ('PSS')
+            cadeira = ("cadeira",localidade_cadeira)
        #     print (localidade_cadeira)
 
         elif tenant["hierarchy"] == "ICRIO>RDJ3>12 floor":
@@ -159,6 +167,7 @@ for tenant in dna_data:
 
         elif tenant["hierarchy"] == "ICRIO>RDJ3>12 floor>Healthcare":
             localidade_cadeira = ('Healthcare')
+            cadeira = ("cadeira",localidade_cadeira)
        #     print (localidade_cadeira)
 
 
