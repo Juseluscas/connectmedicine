@@ -19,7 +19,7 @@ def logica(comando,usermail):
     comando = comando.lower()
     box=comando
 
-    while box == "oi" or box == "ola" or box == "hey" or box == "ei" or box == "alo" or box == "connected medicine oi" or box == "connected medicine ola" or box == "connected medicine hey" or box == "olá" or box == "connected medicine olá" or box2 == "connected oi" or box2 == "connected olá" or box2 == "connected ola" or box2 == "connected hey":
+    while box == "oi" or box == "ola" or box == "hey" or box == "ei" or box == "alo" or box == "connected medicine oi" or box == "connected medicine ola" or box == "connected medicine hey" or box == "olá" or box == "connected medicine olá" or box == "connected oi" or box == "connected olá" or box == "connected ola" or box == "connected hey":
         msg=""
         arquivo=""
         msg= "Olá\n"
