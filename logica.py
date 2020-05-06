@@ -63,7 +63,7 @@ def logica(comando,usermail):
             msg=msg+ "\n *Use as letras para se referênciar*"             
             return msg,arquivo
 
-        elif box2 == "d":
+        elif box2 == "d" or box2 == "connected d" or box2 == "conneted medicine d":
             if cadeira == ('cadeira', 'Retail'):
                 msg = "O dispositivo mais próximo é a cadeira de rodas que se encontra no Retail"
                 msg=msg+ "\n"
