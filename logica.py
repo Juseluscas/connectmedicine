@@ -60,11 +60,10 @@ def logica(comando,usermail):
             msg=msg+ "\n"
             msg=msg+ "\n **g)**Recepção         **h)**PSS         **i)**Healthcare"
             msg=msg+ "\n"
-            msg=msg+ "\n *Use as letras para se referênciar*"
-            box3 = box2               
+            msg=msg+ "\n *Use as letras para se referênciar*"             
             return msg,arquivo
 
-        elif box3 == "d":
+        elif box2 == "d":
             if cadeira == ('cadeira', 'Retail'):
                 msg == "O dispositivo mais próximo é a cadeira de rodas que se encontra no Retail"
                 msg=msg+ "\n"
