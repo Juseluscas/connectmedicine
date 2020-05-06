@@ -105,7 +105,7 @@ def logica(comando,usermail):
             return msg,arquivo
 
         #Cadeira
-        elif box2 == "4" or box2 == "cadeira" or box2 == "cadeira próxima" or box2 == "cadeira de rodas" or box2 == "connected medicine 4" or box2 == "connected medicine cadeira" or box2 == "connected cadeira" or box2 == "connected 4" or "connected cadeira":
+        elif box2 == "4" or box2 == "cadeira" or box2 == "cadeira próxima" or box2 == "cadeira de rodas" or box2 == "connected medicine 4" or box2 == "connected medicine cadeira" or box2 == "connected cadeira" or box2 == "connected 4" or box2 == "connected cadeira":
             msg= "\n A cadeira de rodas mais próxima se encontra no(a) {0}".format(localidade_cadeira)
             msg=msg+ "\n"
             msg=msg+ "\n*Antes de entrar em contato com algum equipamento, lembre-se de utilizar uma mascára e mantenha-se higienizado*"
