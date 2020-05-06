@@ -65,7 +65,7 @@ def logica(comando,usermail):
 
         elif box2 == "d":
             if cadeira == ('cadeira', 'Retail'):
-                msg == "O dispositivo mais próximo é a cadeira de rodas que se encontra no Retail"
+                msg = "O dispositivo mais próximo é a cadeira de rodas que se encontra no Retail"
                 msg=msg+ "\n"
                 msg=msg+ "\n*Antes de entrar em contato com algum equipamento ou paciente, lembre-se de utilizar uma mascára e mantenha-se higienizado*"
                 msg=msg+ "\n"
