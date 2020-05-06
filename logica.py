@@ -132,7 +132,7 @@ def logica(comando,usermail):
             msg="\n A(s) palavra(s) que você utilizou chegaram perto da palavra chave **paciente**, tente ela"
             return msg, arquivo
         elif box2 == "help" or box2 == "connected medicine help" or box2 == "connected help":
-            msg="\n "
+            msg="\n Para entender o meu funcionamento é fácil, temos algumas palavras grafas em **negrito**, utilize essas palavras para me responder, assim fica fácilpara mim procurar uma resposta para você ;)"
             return msg, arquivo 
 
         else:
